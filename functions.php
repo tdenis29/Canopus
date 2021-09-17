@@ -3,6 +3,22 @@
  * Theme Functions
  * @package Canpous
  */
+
+use CANOPUS\Inc\CANOPUS_THEME;
+
+if (! defined( 'CANOPUS_DIR_PATH' ) ) {
+     define('CANOPUS_DIR_PATH', untrailingslashit(get_template_directory()));
+ }
+ 
+ require_once CANOPUS_DIR_PATH . '/inc/helpers/autoloader.php';
+
+function canopus_get_theme_instance(){
+    
+}
+
+canopus_get_theme_instance();
+ 
+
 function Canopus_enqueue_scripts(){
     //STYLES
     wp_enqueue_style('stylesheet', get_stylesheet_uri(), [], filemtime(get_template_directory() . '/style.css'), false, 'all');

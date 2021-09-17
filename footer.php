@@ -5,9 +5,12 @@
  */
 wp_footer();
 ?>
- <footer>
+    <footer>
         Footer
     </footer>
+    <!-- end page div and content div -->
+        </div>
+    </div>
     
 </body>
 </html>
