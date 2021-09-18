@@ -1,11 +1,13 @@
 <?php
+
 /**
  * Autoloader file for theme.
  *
- * @package Canopus
+ * @package CANOPUS
  */
 
 namespace CANOPUS_THEME\Inc\Helpers;
+
 
 /**
  * Auto loader function.
@@ -14,6 +16,7 @@ namespace CANOPUS_THEME\Inc\Helpers;
  *
  * @return void
  */
+
 function autoloader( $resource = '' ) {
 	$resource_path  = false;
 	$namespace_root = 'CANOPUS_THEME\\';

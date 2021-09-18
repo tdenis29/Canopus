@@ -12,12 +12,7 @@ if (! defined( 'CANOPUS_DIR_PATH' ) ) {
  
 require_once CANOPUS_DIR_PATH . '/inc/helpers/autoloader.php';
 
-function aquila_get_theme_instance() {
-	\CANOPUS_THEME\Inc\CANOPUS_THEME::get_instance();
-}
-
-aquila_get_theme_instance();
-
+\CANOPUS_THEME\Inc\CANOPUS_THEME::get_instance();
 
 function Canopus_enqueue_scripts(){
     //STYLES
