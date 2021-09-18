@@ -4,11 +4,14 @@
  * @package Canopus
  */
 
- namespace CANOPUS_THEME\Inc;
+namespace CANOPUS_THEME\Inc;
 
 use CANOPUS_THEME\Inc\Traits\Singleton;
 
-class CANOPUS_THEME {
+// use CANOPUS_THEME\Inc\Traits\Singleton;
+
+class CANOPUS_THEME{
+    // use Singleton;
     use Singleton;
 
     protected function __construct()

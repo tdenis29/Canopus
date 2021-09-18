@@ -78,7 +78,7 @@ trait Singleton {
 			/**
 			 * Dependent items can use the `aquila_theme_singleton_init_{$called_class}` hook to execute code
 			 */
-			do_action( sprintf( 'canopus_singleton_init_%s', $called_class ) ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+			do_action( sprintf( 'aquila_theme_singleton_init_%s', $called_class ) ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
 
 		}
 
@@ -87,5 +87,3 @@ trait Singleton {
 	}
 
 } // End trait
-
-

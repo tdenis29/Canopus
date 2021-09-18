@@ -4,20 +4,20 @@
  * @package Canpous
  */
 
-use CANOPUS\Inc\CANOPUS_THEME;
+
 
 if (! defined( 'CANOPUS_DIR_PATH' ) ) {
      define('CANOPUS_DIR_PATH', untrailingslashit(get_template_directory()));
  }
  
- require_once CANOPUS_DIR_PATH . '/inc/helpers/autoloader.php';
+require_once CANOPUS_DIR_PATH . '/inc/helpers/autoloader.php';
 
-function canopus_get_theme_instance(){
-    
+function aquila_get_theme_instance() {
+	\CANOPUS_THEME\Inc\CANOPUS_THEME::get_instance();
 }
 
-canopus_get_theme_instance();
- 
+aquila_get_theme_instance();
+
 
 function Canopus_enqueue_scripts(){
     //STYLES
