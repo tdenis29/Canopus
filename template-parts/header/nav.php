@@ -11,7 +11,11 @@ $header_menus = wp_get_nav_menu_items( $header_menu_id );
 
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light d-spacebetween">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container">
+
+
+
 	<?php
 	if ( function_exists( 'the_custom_logo' ) ) {
 		the_custom_logo();
@@ -21,7 +25,7 @@ $header_menus = wp_get_nav_menu_items( $header_menu_id );
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
 		<?php
 		if ( ! empty( $header_menus ) && is_array( $header_menus ) ) {
 			?>
@@ -71,10 +75,11 @@ $header_menus = wp_get_nav_menu_items( $header_menu_id );
 			<?php
 		}
 		?>
-		<form class="form-inline my-2 my-lg-0">
+		<form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
 			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
+	</div>
 	</div>
 </nav>
 <!-- 

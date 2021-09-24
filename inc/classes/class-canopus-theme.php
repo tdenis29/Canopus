@@ -73,7 +73,7 @@ class CANOPUS_THEME {
 		  //Content Width of and max width 
 		  global $content_width;
 		  if ( ! isset( $content_width ) ) {
-			  $content_width = 1240;
+			  $content_width = 1200;
 		  }
 
 	}
